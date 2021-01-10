@@ -4,6 +4,7 @@ import wordsToNumbers from "words-to-numbers";
 
 import NewsCards from "./components/NewsCards/NewsCards";
 import useStyles from "./styles.js";
+import voiceNewsScreen from "./img/voiceNewsLogo.png";
 
 const alanKey =
   "975fccaf501eb7b4aaa862ed80f4260e2e956eca572e1d8b807a3e2338fdd0dc/stage";
@@ -48,10 +49,16 @@ export default function App() {
     <div>
       <div className={classes.logoContainer}>
         <img
-          src="https://alan.app/voice/images/previews/preview.jpg"
-          alt="alan logo"
-          className={classes.alanLogo}
+          src={voiceNewsScreen}
+          alt="voice news logo"
+          style={{ paddingTop: "2rem" }}
+          className={classes.voiceNewsLogo}
         />
+        <h1>
+          Voice
+          <br />
+          News!
+        </h1>
       </div>
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />
     </div>

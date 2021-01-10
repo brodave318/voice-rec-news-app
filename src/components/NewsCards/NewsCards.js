@@ -61,7 +61,7 @@ export default function NewsCards({ articles, activeArticle }) {
                   </Typography>
                 ) : null}
                 <Typography variant="h6">
-                  Try saying: <br />
+                  Try saying into the mike : <br />
                   <i>{infoCard.text}</i>
                 </Typography>
               </div>
